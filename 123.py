@@ -1,4 +1,7 @@
-# Version 3
+# Version 4
+greetings = ["Hi", "Hello", "Hey", "Greetings", "Salutations"]
+
 for _ in range(3):
     name = input("Enter your name: ")
-    print(f"Hello, {name}!")
+    greeting = greetings[_ % len(greetings)]
+    print(f"{greeting}, {name}!")
